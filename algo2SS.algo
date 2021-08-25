@@ -1,0 +1,21 @@
+ALGORITHM ALGO2
+VAR
+    set1:ARRAY_OF INTEGER[5]:=[1,2,3,4,5];
+    set2:ARRAY_OF INTEGER[5]:=[7,1,5,4,9];
+    TAB:ARRAY_OF INTEGER[];
+    B:BOOLEAN;
+    i,j,SS:INTEGER:=0;
+BEGIN
+    TAB:=concat(set,set2);
+    FOR i FROM 0 TO TAB.lenght DO
+        B:=false;
+        FOR j FROM 0 TO TAB.lenght DO
+            IF (tab[i]=tab[j]) AND i<>j) THEN
+                B:=true;
+                break; 
+                SS:=SS+TAB[i] 
+            END_IF
+        END_FOR
+    END_FOR
+    return SS;
+END
